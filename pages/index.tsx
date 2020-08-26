@@ -1,46 +1,20 @@
 import React from 'react'
-import Head from 'next/head'
+import PageTitle from '../components/PageTitle'
 
-const Home = () => (
-  <div>
-    <h1>Lilly's Asian Cafe</h1>
-    <h2>Two Harbors, MN</h2>
+const homeContentStyle = {
+    color: "#c8a97e",
+    fontFamily: "Great Vibes"
+}
 
-    <h3>Come get your freaking delicious food</h3>
+const Home: React.FC = () => {
+    return (
+        <div className='home'>
+            <PageTitle title="Lilly's Asian Cafe" />
+            <h2 style={homeContentStyle}>Two Harbors, MN</h2>
 
-    <style jsx>{`
-      :global(html,body) {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-      }
-
-      :global(body) {
-        font-size: calc(10px + 1vmin);
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
-          'Droid Sans', 'Helvetica Neue', sans-serif;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        background-color: #282c34;
-        color: white;
-      }
-
-      a {
-        color: pink;
-        text-decoration: none;
-      }
-
-      .content {
-        padding: 0 32px;
-      }
-    `}</style>
-  </div>
-)
+            <h3 style={homeContentStyle}>Come get your freaking delicious food</h3>
+        </div>
+    )
+}
 
 export default Home
