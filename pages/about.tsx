@@ -1,10 +1,14 @@
 import React from 'react'
-import PageTitle from '../components/PageTitle'
+
+const PageTitleStyle = {
+    color: "#c8a97e",
+    fontFamily: "Great Vibes"
+}
 
 const About: React.FC = () => {
     return (
         <div className='container'>
-            <PageTitle title="About" />
+            <h1 style={PageTitleStyle} className='pageTitle'>Menu</h1>
         </div>
     )
 }
