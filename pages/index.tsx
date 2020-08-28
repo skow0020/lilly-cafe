@@ -8,7 +8,7 @@ const homeContentStyle = {
 
 const Home: React.FC = () => {
     return (
-        <div className='home'>
+        <div className='home container'>
             <PageTitle title="Lilly's Asian Cafe" />
             <h2 style={homeContentStyle}>Two Harbors, MN</h2>
 

@@ -10,7 +10,7 @@ const Layout: React.FC = ({
   children: React.ReactNode
 }) => {
   return (
-    <div className='layout'>
+    <div className='container layout'>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta

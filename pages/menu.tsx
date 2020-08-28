@@ -1,68 +1,17 @@
 import React from 'react'
-import Link from 'next/link'
+import MenuCard from '../components/MenuCard'
 import { getMenuItemsData } from '../lib/items'
+import PageTitle from '../components/PageTitle'
 
-const menuListStyle = {
-    width: "18rem"
-}
-
-const Menu: React.FC = ({ allMenuItemsData }: any) => {
+const Menu: React.FC = ({ beefItems, veggieItems }: any) => {
     return (
-        <div className='menuContainer'>
-            <h1>Menu</h1>
+        <div className='container'>
+            <PageTitle title="Menu" />
             <div className="container">
-                <div className="row">
-                    <div className="col-sm">
-                        <div className="card" style={menuListStyle}>
-                            <div className="card-header" style={{'color': 'black'}}>
-                                Beef
-                            </div>
-                            <ul className="list-group list-group-flush">
-                                {allMenuItemsData.map(({ id, price, item }) => (
-                                    <li className="list-group-item" key={id}>
-                                        <Link href="/menuItem/[id]" as={`/menuItem/${id}`}>
-                                            <a>{item}, {price}</a>
-                                        </Link>
-                                        <br />
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="col-sm">
-                        <div className="card" style={menuListStyle}>
-                            <div className="card-header">
-                                Vegetables
-                            </div>
-                            <ul className="list-group list-group-flush">
-                                {allMenuItemsData.map(({ id, price, item }) => (
-                                    <li className="list-group-item" key={id}>
-                                        <Link href="/menuItem/[id]" as={`/menuItem/${id}`}>
-                                            <a>{item} ::: {price}</a>
-                                        </Link>
-                                        <br />
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="col-sm">
-                        <div className="card" style={menuListStyle}>
-                            <div className="card-header">
-                                Curry
-                            </div>
-                            <ul className="list-group list-group-flush">
-                                {allMenuItemsData.map(({ id, price, item }) => (
-                                    <li className="list-group-item" key={id}>
-                                        <Link href="/menuItem/[id]" as={`/menuItem/${id}`}>
-                                            <a>{item} ::: {price}</a>
-                                        </Link>
-                                        <br />
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                    </div>
+                <div className="card-deck">
+                    <MenuCard type="Beef" menuCardItems={beefItems}/>
+                    <MenuCard type="Vegetable" menuCardItems={veggieItems}/>
+                    <MenuCard type="Chicken" menuCardItems={beefItems}/>
                 </div>
             </div>
         </div>
@@ -70,11 +19,13 @@ const Menu: React.FC = ({ allMenuItemsData }: any) => {
 }
 
 export async function getStaticProps(): Promise<any> {
-    const allMenuItemsData = getMenuItemsData()
-    console.log(allMenuItemsData)
+    const beefItems = getMenuItemsData("beef")
+    const veggieItems = getMenuItemsData("veggie")
+
     return {
         props: {
-            allMenuItemsData
+            beefItems,
+            veggieItems
         }
     }
 }

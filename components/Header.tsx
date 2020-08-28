@@ -16,9 +16,11 @@ const Header: React.FC<HeaderProps> = (props: HeaderProps) => {
             <nav className="navbar navbar-expand-lg ftco-navbar-light" style={navbarStyle}>
                 <div className="container">
                     <a className="navbar-brand" href="/">{props.restaurantName}</a>
-                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="oi oi-menu"></span> Menu
-                </button>
+                    <Link href='/menu'>
+                        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span className="oi oi-menu"></span> Menu
+                        </button>
+                    </Link>
 
                     <div className="collapse navbar-collapse">
                         <ul className="navbar-nav ml-auto">
@@ -64,12 +66,7 @@ const headerStyle = {
 
 const navbarStyle = {
     background: "transparent",
-    position: "absolute",
-    top: "50px",
-    left: 0,
-    right: 0,
     padding: 0,
-    borderBottom: "1px solid rgba(255, 255, 255, 0.1)"
 } as React.CSSProperties
 
 export default Header

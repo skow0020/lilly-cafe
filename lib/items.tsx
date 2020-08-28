@@ -6,7 +6,8 @@ import html from 'remark-html'
 
 const menuItemsDirectory = path.join(process.cwd(), 'menuItems')
 
-export function getMenuItemsData(): any {
+export function getMenuItemsData(mealType: string): any {
+  const menuItemsDirectory = path.join(process.cwd(), `menuItems/${mealType}`)
   // Get file names under /menuItems
   const fileNames = fs.readdirSync(menuItemsDirectory)
   const allMenuItemsData = fileNames.map(fileName => {
