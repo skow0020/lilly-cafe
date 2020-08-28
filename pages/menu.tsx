@@ -1,20 +1,38 @@
 import React from 'react'
 import MenuCard from '../components/MenuCard'
 import { getMenuItemsData } from '../lib/items'
-import PageTitle from '../components/PageTitle'
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+
+const PageTitleStyle = {
+    color: "#c8a97e",
+    fontFamily: "Great Vibes"
+}
+
+const MenuStyle = {
+    position: "relative",
+    top: "100px",
+    bottom: "200px"
+} as React.CSSProperties
 
 const Menu: React.FC = ({ beefItems, veggieItems }: any) => {
     return (
-        <div className='container'>
-            <PageTitle title="Menu" />
-            <div className="container">
-                <div className="card-deck">
-                    <MenuCard type="Beef" menuCardItems={beefItems}/>
-                    <MenuCard type="Vegetable" menuCardItems={veggieItems}/>
-                    <MenuCard type="Chicken" menuCardItems={beefItems}/>
-                </div>
+        <Container style={MenuStyle}>
+            <Row>
+                <h1 style={PageTitleStyle} className='pageTitle'>Menu</h1>
+            </Row>
+            <div className="card-deck">
+                <MenuCard type="Beef" menuCardItems={beefItems} />
+                <MenuCard type="Vegetable" menuCardItems={veggieItems} />
+                <MenuCard type="Chicken" menuCardItems={beefItems} />
             </div>
-        </div>
+            <br></br>
+            <div className="card-deck">
+                <MenuCard type="Beef" menuCardItems={beefItems} />
+                <MenuCard type="Vegetable" menuCardItems={veggieItems} />
+                <MenuCard type="Chicken" menuCardItems={beefItems} />
+            </div>
+        </Container>
     )
 }
 

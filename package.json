@@ -8,10 +8,13 @@
     "eslint": "eslint ."
   },
   "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "bootstrap": "^4.5.2",
     "gray-matter": "^4.0.2",
     "next": "9.5.2",
     "next-fonts": "^1.4.0",
     "react": "16.13.1",
+    "react-bootstrap": "^1.3.0",
     "react-dom": "16.13.1",
     "remark": "^12.0.1",
     "remark-html": "^12.0.0"

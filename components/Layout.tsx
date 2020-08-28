@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Header from './Header'
 import Footer from './Footer'
+import Container from 'react-bootstrap/Container';
 
 export const siteTitle = `Lilly's Asian Cafe`
 
@@ -10,7 +11,7 @@ const Layout: React.FC = ({
   children: React.ReactNode
 }) => {
   return (
-    <div className='container layout'>
+    <Container className='layout'>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -21,12 +22,20 @@ const Layout: React.FC = ({
       <Header
         restaurantName={siteTitle}
         phoneNumber='(218) 834-4373'
-        hours='Open hours: 12:00PM - 3:00PM, 4:00PM - 7:30PM'
+        hours='12:00PM - 3:00PM, 4:00PM - 7:30PM'
       />
-      <main>{children}</main>
+      <Container style={contentStyle}>
+        {children}
+      </Container>
       <Footer />
-    </div>
+    </Container>
   )
 }
+
+const contentStyle = {
+  textAlign: "center",
+  height: "90%",
+  width: "100%",
+} as React.CSSProperties
 
 export default Layout

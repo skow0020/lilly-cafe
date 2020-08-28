@@ -1,20 +1,48 @@
 import React from 'react'
-import PageTitle from '../components/PageTitle'
-
-const homeContentStyle = {
-    color: "#c8a97e",
-    fontFamily: "Great Vibes"
-}
+import Carousel from 'react-bootstrap/Carousel';
 
 const Home: React.FC = () => {
     return (
-        <div className='home container'>
-            <PageTitle title="Lilly's Asian Cafe" />
-            <h2 style={homeContentStyle}>Two Harbors, MN</h2>
+        <Carousel>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src="images/bg_1.jpg"
+                    alt="First slide"
+                />
+                <Carousel.Caption>
+                    <h3>Lilly's Asian Cafe</h3>
+                    <p>Two Harbors, MN</p>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src="images/bg_2.jpg"
+                    alt="Third slide"
+                />
 
-            <h3 style={homeContentStyle}>Come get your freaking delicious food</h3>
-        </div>
+                <Carousel.Caption>
+                    <h3>Lilly's Asian Cafe</h3>
+                    <p>Come get your freaking delicious food</p>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src="images/bg_1.jpg"
+                    alt="Third slide"
+                />
+
+                <Carousel.Caption>
+                    <h3>Third slide label</h3>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                </Carousel.Caption>
+            </Carousel.Item>
+        </Carousel>
     )
 }
 
 export default Home
+
+

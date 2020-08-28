@@ -1,4 +1,5 @@
 import React from 'react'
+import Row from 'react-bootstrap/Row';
 
 interface TopHeaderProps {
     phoneNumber: string
@@ -7,14 +8,14 @@ interface TopHeaderProps {
 
 const TopHeader: React.FC<TopHeaderProps> = (props: TopHeaderProps) => {
     return (
-        <div className="row">
+        <Row>
             <div className="phoneNum" style={phoneStyle}>
                 <span className="text">{props.phoneNumber}</span>
             </div>
             <div className="hours" style={hoursStyle}>
                 {props.hours}
             </div>
-        </div>
+        </Row>
     )
 }
 
