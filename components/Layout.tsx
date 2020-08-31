@@ -21,7 +21,7 @@ const Layout: React.FC = ({
       </Head>
       <Header
         restaurantName={siteTitle}
-        phoneNumber='(218) 834-4373'
+        phoneNumber='2188344373'
         hours='12:00PM - 3:00PM, 4:00PM - 7:30PM'
       />
       <Container style={contentStyle}>
