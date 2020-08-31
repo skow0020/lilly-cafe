@@ -1,8 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 
-interface MenuCardProps{
-    menuCardItems: Array<{id: string, price: string, item: string}>
+interface MenuCardProps {
+    menuCardItems: Array<{ id: string, price: string, item: string }>
     type: string
 }
 
@@ -15,7 +15,7 @@ const MenuCard: React.FC<MenuCardProps> = (props: MenuCardProps) => {
         <div className="card" style={menuListStyle}>
             <div className="card-header" style={{ 'color': 'black' }}>
                 {props.type}
-                        </div>
+            </div>
             <ul className="list-group list-group-flush">
                 {props.menuCardItems.map(({ id, price, item }) => (
                     <li className="list-group-item" key={id}>

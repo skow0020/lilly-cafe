@@ -1,10 +1,17 @@
 import React from 'react'
+import PageTitle from '../components/PageTitle'
+import Container from 'react-bootstrap/Container'
+
+const ContactStyle = {
+    textAlign: "center",
+    paddingBottom: "100px"
+} as React.CSSProperties
 
 const Contact: React.FC = () => {
     return (
-        <div className='container'>
-            <h1 className='pageTitle'>Contact</h1>
-        </div>
+        <Container style={ContactStyle}>
+            <PageTitle title="Contact" />
+        </Container>
     )
 }
 

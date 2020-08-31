@@ -1,5 +1,5 @@
 import React from 'react'
-import Row from 'react-bootstrap/Row';
+import Row from 'react-bootstrap/Row'
 
 interface TopHeaderProps {
     phoneNumber: string
@@ -11,7 +11,7 @@ const TopHeader: React.FC<TopHeaderProps> = (props: TopHeaderProps) => {
     const phoneNum = formatPhoneNumber(props.phoneNumber)
 
     return (
-        <Row>
+        <Row style={TopHeaderStyle}>
             <div className="phoneNum" style={phoneStyle}>
                 <a href={`tel:+${props.phoneNumber}`} className="phone">
                     {phoneNum}
@@ -22,6 +22,10 @@ const TopHeader: React.FC<TopHeaderProps> = (props: TopHeaderProps) => {
             </div>
         </Row>
     )
+}
+
+const TopHeaderStyle = {
+    padding: "10px"
 }
 
 const phoneStyle = {

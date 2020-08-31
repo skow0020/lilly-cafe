@@ -1,14 +1,19 @@
 import Head from 'next/head'
 import Header from './Header'
 import Footer from './Footer'
-import Container from 'react-bootstrap/Container';
+import Container from 'react-bootstrap/Container'
 
 export const siteTitle = `Lilly's Asian Cafe`
 
+const LayoutStyle = {
+    backgroundColor: "#272e3b",
+    padding: 0
+}
+
 const Layout: React.FC = ({
-  children
+    children
 }: {
-  children: React.ReactNode
+    children: React.ReactNode
 }) => {
   return (
     <Container className='layout'>
@@ -24,18 +29,12 @@ const Layout: React.FC = ({
         phoneNumber='2188344373'
         hours='12:00PM - 3:00PM, 4:00PM - 7:30PM'
       />
-      <Container style={contentStyle}>
         {children}
-      </Container>
       <Footer />
     </Container>
   )
 }
 
-const contentStyle = {
-  textAlign: "center",
-  height: "90%",
-  width: "100%",
-} as React.CSSProperties
+
 
 export default Layout

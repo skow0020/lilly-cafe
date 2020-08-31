@@ -1,37 +1,40 @@
 import React from 'react'
 import MenuCard from '../components/MenuCard'
 import { getMenuItemsData } from '../lib/items'
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-
-const PageTitleStyle = {
-    color: "#c8a97e",
-    fontFamily: "Great Vibes"
-}
+import Row from 'react-bootstrap/Row'
+import Container from 'react-bootstrap/Container'
+import PageTitle from '../components/PageTitle'
 
 const MenuStyle = {
-    position: "relative",
-    top: "100px",
-    bottom: "200px"
+    textAlign: "center",
+    paddingBottom: "100px"
 } as React.CSSProperties
+
+const RowStyle = {
+    display: "inline=block"
+}
 
 const Menu: React.FC = ({ beefItems, veggieItems }: any) => {
     return (
         <Container style={MenuStyle}>
-            <Row>
-                <h1 style={PageTitleStyle} className='pageTitle'>Menu</h1>
+            <PageTitle title="Menu" />
+            <Row xs={1} className="card-deck" style={RowStyle}>
+                <MenuCard type="Beef" menuCardItems={beefItems} />
+                <MenuCard type="Vegetable" menuCardItems={veggieItems} />
+                <MenuCard type="Chicken" menuCardItems={beefItems} />
             </Row>
-            <div className="card-deck">
-                <MenuCard type="Beef" menuCardItems={beefItems} />
-                <MenuCard type="Vegetable" menuCardItems={veggieItems} />
-                <MenuCard type="Chicken" menuCardItems={beefItems} />
-            </div>
             <br></br>
-            <div className="card-deck">
+            <Row xs={1} className="card-deck" style={RowStyle}>
                 <MenuCard type="Beef" menuCardItems={beefItems} />
                 <MenuCard type="Vegetable" menuCardItems={veggieItems} />
                 <MenuCard type="Chicken" menuCardItems={beefItems} />
-            </div>
+            </Row>
+            <br></br>
+            <Row xs={1} className="card-deck" style={RowStyle}>
+                <MenuCard type="Beef" menuCardItems={beefItems} />
+                <MenuCard type="Vegetable" menuCardItems={veggieItems} />
+                <MenuCard type="Chicken" menuCardItems={beefItems} />
+            </Row>
         </Container>
     )
 }
