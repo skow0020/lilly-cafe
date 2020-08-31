@@ -5,31 +5,34 @@ import Container from 'react-bootstrap/Container'
 
 export const siteTitle = `Lilly's Asian Cafe`
 
+const LayoutStyle = {
+    backgroundColor: "#272e3b",
+    padding: 0
+}
+
 const Layout: React.FC = ({
-  children
+    children
 }: {
-  children: React.ReactNode
+    children: React.ReactNode
 }) => {
-  return (
-    <Container className='layout'>
-      <Head>
-        <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content="Two Harbors Lilly's Asian Cafe Food Restaurant" />
-        <meta name="og:title" content={siteTitle} />
-      </Head>
-      <Header
-        restaurantName={siteTitle}
-        phoneNumber='(218) 834-4373'
-        hours='12:00PM - 3:00PM, 4:00PM - 7:30PM'
-      />
-      <Container>
-        {children}
-      </Container>
-      <Footer />
-    </Container>
-  )
+    return (
+        <Container className='layout' style={LayoutStyle}>
+            <Head>
+                <link rel="icon" href="/favicon.ico" />
+                <meta
+                    name="description"
+                    content="Two Harbors Lilly's Asian Cafe Food Restaurant" />
+                <meta name="og:title" content={siteTitle} />
+            </Head>
+            <Header
+                restaurantName={siteTitle}
+                phoneNumber='(218) 834-4373'
+                hours='12:00PM - 3:00PM, 4:00PM - 7:30PM'
+            />
+            {children}
+            <Footer />
+        </Container>
+    )
 }
 
 

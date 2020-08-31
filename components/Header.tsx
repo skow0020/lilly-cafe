@@ -22,7 +22,6 @@ const headerStyle = {
     top: 0,
     left: 0,
     right: 0,
-    background: "gray",
     color: "rgba(255, 255, 255, 0.5)",
     fontSize: "14px",
     width: "100%"

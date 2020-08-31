@@ -8,7 +8,7 @@ interface TopHeaderProps {
 
 const TopHeader: React.FC<TopHeaderProps> = (props: TopHeaderProps) => {
     return (
-        <Row>
+        <Row style={TopHeaderStyle}>
             <div className="phoneNum" style={phoneStyle}>
                 <span className="text">{props.phoneNumber}</span>
             </div>
@@ -17,6 +17,10 @@ const TopHeader: React.FC<TopHeaderProps> = (props: TopHeaderProps) => {
             </div>
         </Row>
     )
+}
+
+const TopHeaderStyle = {
+    padding: "10px"
 }
 
 const phoneStyle = {
