@@ -3,11 +3,7 @@ import MenuCard from '../components/MenuCard'
 import { getMenuItemsData } from '../lib/items'
 import Row from 'react-bootstrap/Row'
 import Container from 'react-bootstrap/Container'
-
-const PageTitleStyle = {
-    color: "#c8a97e",
-    fontFamily: "Great Vibes"
-}
+import PageTitle from '../components/PageTitle'
 
 const MenuStyle = {
     textAlign: "center",
@@ -21,7 +17,7 @@ const RowStyle = {
 const Menu: React.FC = ({ beefItems, veggieItems }: any) => {
     return (
         <Container style={MenuStyle}>
-            <h1 style={PageTitleStyle} className='pageTitle'>Menu</h1>
+            <PageTitle title="Menu" />
             <Row xs={1} className="card-deck" style={RowStyle}>
                 <MenuCard type="Beef" menuCardItems={beefItems} />
                 <MenuCard type="Vegetable" menuCardItems={veggieItems} />
