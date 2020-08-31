@@ -13,7 +13,7 @@ const TopHeader: React.FC<TopHeaderProps> = (props: TopHeaderProps) => {
     return (
         <Row style={TopHeaderStyle}>
             <div className="phoneNum" style={phoneStyle}>
-                <a href={`tel:+${props.phoneNumber}`} className="phone">
+                <a href={`tel:+${props.phoneNumber}`} style={phonehref}>
                     {phoneNum}
                 </a>
             </div>
@@ -33,6 +33,10 @@ const phoneStyle = {
     flexBasis: 0,
     flexGrow: 1,
     paddingLeft: "15px"
+}
+
+const phonehref = {
+    color: "white"
 }
 
 const hoursStyle = {
