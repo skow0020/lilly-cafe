@@ -1,6 +1,7 @@
 import React from 'react'
 import PageTitle from '../components/PageTitle'
 import Container from 'react-bootstrap/Container'
+import theme from './styles/theme'
 
 const AboutStyle = {
     textAlign: "center",
@@ -12,8 +13,8 @@ const MainImageStyle = {
 }
 
 const AboutInfoStyle = {
-    color: "#c8a97e",
-    fontFamily: "Great Vibes"
+    color: theme.colors.textColor,
+    fontFamily: theme.fontFamily.vibes
 }
 
 const About: React.FC = () => {

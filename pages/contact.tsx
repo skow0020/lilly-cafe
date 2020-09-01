@@ -2,6 +2,7 @@ import React from 'react'
 import PageTitle from '../components/PageTitle'
 import Container from 'react-bootstrap/Container'
 import Map from '../components/Map'
+import theme from './styles/theme'
 
 const ContactStyle = {
     textAlign: "center",
@@ -13,11 +14,19 @@ const mapCenter = {
     lng: -91.6761874
 };
 
+const ContactInfoStyle = {
+    color: theme.colors.textColor,
+    fontFamily: theme.fontFamily.vibes
+}
+
 const Contact: React.FC = () => {
     return (
         <Container style={ContactStyle}>
             <PageTitle title="Contact" />
             <Map center={mapCenter} zoom={14} ></Map>
+            <div>
+                <h3 style={ContactInfoStyle}>Come find us! Call to order or sit in our cozy outdoor area!</h3>
+            </div>
         </Container>
     )
 }

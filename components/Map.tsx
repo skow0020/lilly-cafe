@@ -11,11 +11,6 @@ interface SimpleMapProps {
     zoom: number
 };
 
-const mapCenter = {
-  lat: 47.0254538,
-  lng: -91.6761874
-};
- 
 const SimpleMap: React.FC<SimpleMapProps> = (props: SimpleMapProps) => {
   return (
     <LoadScript
@@ -23,11 +18,11 @@ const SimpleMap: React.FC<SimpleMapProps> = (props: SimpleMapProps) => {
     >
       <GoogleMap
         mapContainerStyle={containerStyle}
-        center={mapCenter}
-        zoom={14}
+        center={props.center}
+        zoom={props.zoom}
       >
         <Marker
-          position={mapCenter}
+          position={props.center}
         />
       </GoogleMap>
     </LoadScript>
