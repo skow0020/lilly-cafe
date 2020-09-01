@@ -8,8 +8,10 @@
     "eslint": "eslint ."
   },
   "dependencies": {
+    "@react-google-maps/api": "^1.9.12",
     "@zeit/next-css": "^1.0.1",
     "bootstrap": "^4.5.2",
+    "google-map-react": "^2.1.2",
     "gray-matter": "^4.0.2",
     "next": "9.5.2",
     "next-fonts": "^1.4.0",
@@ -24,6 +26,7 @@
     "@types/react": "^16.9.46",
     "@typescript-eslint/eslint-plugin": "^3.10.1",
     "@typescript-eslint/parser": "^3.10.1",
+    "dotenv": "^8.2.0",
     "eslint": "^7.7.0",
     "eslint-loader": "^4.0.2",
     "eslint-plugin-react": "^7.20.6",
