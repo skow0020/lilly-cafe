@@ -16,7 +16,7 @@ const Layout: React.FC = ({
     children: React.ReactNode
 }) => {
   return (
-    <Container className='layout'>
+    <Container className='layout' style={LayoutStyle}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
