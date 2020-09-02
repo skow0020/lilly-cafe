@@ -1,6 +1,6 @@
 ---
 item: "Tofu and Artichoke"
-price: "$85.00"
+price: "$80.00"
 ---
 
 You get lots of tofu and artichoke with veggies
