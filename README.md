@@ -1,26 +1,14 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9b8a0175-0cab-4861-b27f-08d15e1da25c/deploy-status)](https://app.netlify.com/sites/musing-darwin-3a3f81/deploys)
 
-# A Next.js starter for the [JAMstack](https://jamstack.org)
-This is a boilerplate for using [Next.js](https://nextjs.org/) as a static site generator.
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/next-starter-jamstack)
+# A [Next.js](https://nextjs.org/) typescript example website built for Lilly's Asian Cafe with the [JAMstack](https://jamstack.org)
 
 ## Usage
 
-### Getting started
-
-To start your project, either:
-
-1. Deploy to Netlify using the button above, or
-2. Clone this repository and run:
-
-```bash
-npm install
-```
-
-This will take some time and will install all packages necessary to run the starter.
-
 ### Development
+
+.env file required with Google Maps API Key:
+
+GOOGLE_MAPS_API_KEY=<KEY>
 
 While developing your website, use:
 
@@ -54,11 +42,3 @@ using Next.js. If you would like to add more resources please open a pull reques
 - [Using Next.js as a Static Site Generator for Netlify](https://scotch.io/@sw-yx/using-nextjs-as-a-static-site-generator-for-netlify) - [Shawn Wang](https://twitter.com/swyx)
 - [Serverless Next.js 9 on Netlify Functions](https://community.netlify.com/t/serverless-next-js-9-on-netlify-functions/1956) - [Shawn Wang](https://twitter.com/swyx)
 
-## Deploying to Netlify
-
-The deploy to Netlify button above will create a new site and repo in one click. If you've created your repo manually, you can deploy to Netlify as follows:
-
-- Push your clone to your own GitHub repository.
-- [Create a new site on Netlify](https://app.netlify.com/start) and link the repository.
-
-Now Netlify will build and deploy your site whenever you push to git.
