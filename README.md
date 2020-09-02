@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9b8a0175-0cab-4861-b27f-08d15e1da25c/deploy-status)](https://app.netlify.com/sites/musing-darwin-3a3f81/deploys)
+
 # A Next.js starter for the [JAMstack](https://jamstack.org)
 This is a boilerplate for using [Next.js](https://nextjs.org/) as a static site generator.
 
