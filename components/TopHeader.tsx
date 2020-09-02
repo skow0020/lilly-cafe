@@ -3,7 +3,8 @@ import Row from 'react-bootstrap/Row'
 
 interface TopHeaderProps {
     phoneNumber: string
-    hours: string
+    hours: string,
+    id: string
 }
 
 const TopHeader: React.FC<TopHeaderProps> = (props: TopHeaderProps) => {
@@ -11,7 +12,7 @@ const TopHeader: React.FC<TopHeaderProps> = (props: TopHeaderProps) => {
     const phoneNum = formatPhoneNumber(props.phoneNumber)
 
     return (
-        <Row style={TopHeaderStyle}>
+        <Row id={props.id} style={TopHeaderStyle}>
             <div className="phoneNum" style={phoneStyle}>
                 <a href={`tel:+${props.phoneNumber}`} style={phonehref}>
                     {phoneNum}

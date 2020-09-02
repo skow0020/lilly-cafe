@@ -8,7 +8,8 @@ const containerStyle = {
 
 interface SimpleMapProps {
     center: object,
-    zoom: number
+    zoom: number,
+    id: string
 };
 
 const SimpleMap: React.FC<SimpleMapProps> = (props: SimpleMapProps) => {
@@ -17,6 +18,7 @@ const SimpleMap: React.FC<SimpleMapProps> = (props: SimpleMapProps) => {
       googleMapsApiKey={process.env.GOOGLE_MAPS_API_KEY}
     >
       <GoogleMap
+        id={props.id}
         mapContainerStyle={containerStyle}
         center={props.center}
         zoom={props.zoom}

@@ -4,6 +4,7 @@ import Link from 'next/link'
 interface MenuCardProps {
     menuCardItems: Array<{ id: string, price: string, item: string }>
     type: string
+    id: string
 }
 
 const menuListStyle = {
@@ -12,7 +13,7 @@ const menuListStyle = {
 
 const MenuCard: React.FC<MenuCardProps> = (props: MenuCardProps) => {
     return (
-        <div className="card" style={menuListStyle}>
+        <div id={props.id} className="card" style={menuListStyle}>
             <div className="card-header" style={{ 'color': 'black' }}>
                 {props.type}
             </div>

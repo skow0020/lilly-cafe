@@ -20,16 +20,17 @@ const AboutInfoStyle = {
 const About: React.FC = () => {
     return (
         <Container style={AboutStyle}>
-            <PageTitle title="About" />
+            <PageTitle id="aboutTitle" title="About" />
             <div>
                 <img
+                    id="aboutImage"
                     src="images/lillys.jpg"
                     alt="About Lilly's"
                     style={MainImageStyle}
                 />
             </div>
             <div>
-                <h2 style={AboutInfoStyle}>Delicious, Fulfilling, Healthy Asian Food</h2>
+                <h2 id="aboutInfo" style={AboutInfoStyle}>Delicious, Fulfilling, Healthy Asian Food</h2>
             </div>
         </Container>
     )

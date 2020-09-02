@@ -12,7 +12,7 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = (props: HeaderProps) => {
     return (
         <Container className="header" style={headerStyle}>
-            <TopHeader phoneNumber={props.phoneNumber} hours={props.hours} />
+            <TopHeader id="topHeader" phoneNumber={props.phoneNumber} hours={props.hours} />
             <NavBar />
         </Container>
     )

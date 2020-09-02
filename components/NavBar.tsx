@@ -9,10 +9,10 @@ const NavBar: React.FC = () => {
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto" />
                 <Nav>
-                    <Nav.Link href="/">Home</Nav.Link>
-                    <Nav.Link href="about">About</Nav.Link>
-                    <Nav.Link href="menu">Menu</Nav.Link>
-                    <Nav.Link href="contact">Contact</Nav.Link>
+                    <Nav.Link id="homeLink" href="/">Home</Nav.Link>
+                    <Nav.Link id="aboutLink" href="about">About</Nav.Link>
+                    <Nav.Link id="menuLink" href="menu">Menu</Nav.Link>
+                    <Nav.Link id="contactLink" href="contact">Contact</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

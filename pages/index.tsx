@@ -7,39 +7,39 @@ const CarouselImageStyle = {
 
 const Home: React.FC = () => {
     return (
-        <Carousel>
+        <Carousel id="carousel">
             <Carousel.Item>
                 <img
-                    className="d-block w-100"
+                    className="d-block w-100 item-1"
                     src="images/bg_2.jpg"
                     alt="Third slide"
                     style={CarouselImageStyle}
                 />
-                <Carousel.Caption>
+                <Carousel.Caption className="caption-1">
                     <h3>Lilly&apos;s Asian Cafe</h3>
                     <p>Two Harbors, MN</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img
-                    className="d-block w-100"
+                    className="d-block w-100 item-2"
                     src="images/bg_1.jpg"
                     alt="First slide"
                     style={CarouselImageStyle}
                 />
-                <Carousel.Caption>
+                <Carousel.Caption className="caption-2">
                     <h3>Call to Order!</h3>
                     <p>(218) 834-4373</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img
-                    className="d-block w-100"
+                    className="d-block w-100 item-3"
                     src="images/bg_1.jpg"
                     alt="Third slide"
                     style={CarouselImageStyle}
                 />
-                <Carousel.Caption>
+                <Carousel.Caption className="caption-3">
                     <h3>Lilly&apos;s Asian Cafe</h3>
                     <p>What is taking you so long?</p>
                 </Carousel.Caption>

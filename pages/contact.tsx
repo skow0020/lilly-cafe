@@ -22,11 +22,11 @@ const ContactInfoStyle = {
 const Contact: React.FC = () => {
     return (
         <Container style={ContactStyle}>
-            <PageTitle title="Contact" />
-            <Map center={mapCenter} zoom={14} ></Map>
+            <PageTitle id="contactTitle" title="Contact" />
+            <Map id="mapView" center={mapCenter} zoom={14} ></Map>
             <div>
                 <h3 style={ContactInfoStyle}>Come find us! Call to order or sit in our cozy outdoor area!</h3>
-                <h4 style={ContactInfoStyle}>826 7th Avenue</h4>
+                <h4 id="address" style={ContactInfoStyle}>826 7th Avenue</h4>
                 <h4 style={ContactInfoStyle}>Two Harbors, MN 55616</h4>
             </div>
         </Container>

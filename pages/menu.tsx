@@ -17,23 +17,23 @@ const RowStyle = {
 const Menu: React.FC = ({ beefItems, veggieItems }: any) => {
     return (
         <Container style={MenuStyle}>
-            <PageTitle title="Menu" />
-            <Row xs={1} className="card-deck" style={RowStyle}>
-                <MenuCard type="Beef" menuCardItems={beefItems} />
-                <MenuCard type="Vegetable" menuCardItems={veggieItems} />
-                <MenuCard type="Chicken" menuCardItems={beefItems} />
+            <PageTitle id="menuTitle" title="Menu" />
+            <Row xs={1} className="card-deck row-1" style={RowStyle}>
+                <MenuCard id="card-1" type="Beef" menuCardItems={beefItems} />
+                <MenuCard id="card-2" type="Vegetable" menuCardItems={veggieItems} />
+                <MenuCard id="card-3" type="Chicken" menuCardItems={beefItems} />
             </Row>
             <br></br>
-            <Row xs={1} className="card-deck" style={RowStyle}>
-                <MenuCard type="Beef" menuCardItems={beefItems} />
-                <MenuCard type="Vegetable" menuCardItems={veggieItems} />
-                <MenuCard type="Chicken" menuCardItems={beefItems} />
+            <Row xs={1} className="card-deck row-2" style={RowStyle}>
+                <MenuCard id="card-4" type="Beef" menuCardItems={beefItems} />
+                <MenuCard id="card-5" type="Vegetable" menuCardItems={veggieItems} />
+                <MenuCard id="card-6" type="Chicken" menuCardItems={beefItems} />
             </Row>
             <br></br>
-            <Row xs={1} className="card-deck" style={RowStyle}>
-                <MenuCard type="Beef" menuCardItems={beefItems} />
-                <MenuCard type="Vegetable" menuCardItems={veggieItems} />
-                <MenuCard type="Chicken" menuCardItems={beefItems} />
+            <Row xs={1} className="card-deck row-3" style={RowStyle}>
+                <MenuCard id="card-7" type="Beef" menuCardItems={beefItems} />
+                <MenuCard id="card-8" type="Vegetable" menuCardItems={veggieItems} />
+                <MenuCard id="card-9" type="Chicken" menuCardItems={beefItems} />
             </Row>
         </Container>
     )

@@ -2,6 +2,7 @@ import React from 'react'
 
 interface PageTitleProps {
     title: string
+    id: string
 }
 
 const PageTitleStyle = {
@@ -11,7 +12,7 @@ const PageTitleStyle = {
 
 const PageTitle: React.FC<PageTitleProps> = (props: PageTitleProps) => {
     return (
-        <h1 style={PageTitleStyle} className='pageTitle'>{props.title}</h1>
+        <h1 id={props.id} style={PageTitleStyle} className='pageTitle'>{props.title}</h1>
     )
 }
 
