@@ -17,7 +17,7 @@ const MainImageStyle = {
 const AboutInfoStyle = {
     color: theme.colors.textColor,
     fontFamily: theme.fontFamily.vibes
-};
+}
 
 const About: React.FC = () => {
     return (
