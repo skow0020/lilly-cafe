@@ -1,4 +1,3 @@
-// styles/theme.js
 const theme = {
     fontFamily: {
       vibes: 'Great Vibes',

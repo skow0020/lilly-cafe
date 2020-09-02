@@ -2,7 +2,7 @@ import React from 'react'
 import PageTitle from '../components/PageTitle'
 import Container from 'react-bootstrap/Container'
 import Map from '../components/Map'
-import theme from './styles/theme'
+import theme from '../styles/theme'
 
 const ContactStyle = {
     textAlign: "center",
