@@ -1,9 +1,9 @@
-import React from 'react'
-import MenuCard from '../components/MenuCard'
-import { getMenuItemsData } from '../lib/items'
-import Row from 'react-bootstrap/Row'
-import Container from 'react-bootstrap/Container'
-import PageTitle from '../components/PageTitle'
+import React from "react"
+import MenuCard from "../components/MenuCard"
+import { getMenuItemsData } from "../lib/items"
+import Row from "react-bootstrap/Row"
+import Container from "react-bootstrap/Container"
+import PageTitle from "../components/PageTitle"
 
 const MenuStyle = {
     textAlign: "center",

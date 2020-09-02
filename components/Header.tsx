@@ -1,7 +1,7 @@
-import React from 'react'
-import TopHeader from './TopHeader'
-import Container from 'react-bootstrap/Container'
-import NavBar from './NavBar'
+import React from "react"
+import TopHeader from "./TopHeader"
+import Container from "react-bootstrap/Container"
+import NavBar from "./NavBar"
 
 interface HeaderProps {
     restaurantName: string;

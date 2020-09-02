@@ -1,8 +1,8 @@
-import React from 'react'
-import PageTitle from '../components/PageTitle'
-import Container from 'react-bootstrap/Container'
-import Map from '../components/Map'
-import theme from '../styles/theme'
+import React from "react"
+import PageTitle from "../components/PageTitle"
+import Container from "react-bootstrap/Container"
+import Map from "../components/Map"
+import theme from "../styles/theme"
 
 const ContactStyle = {
     textAlign: "center",
@@ -12,7 +12,7 @@ const ContactStyle = {
 const mapCenter = {
     lat: 47.0254538,
     lng: -91.6761874
-};
+}
 
 const ContactInfoStyle = {
     color: theme.colors.textColor,

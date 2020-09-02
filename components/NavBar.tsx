@@ -1,6 +1,6 @@
-import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
-import theme from '../styles/theme'
+import Navbar from "react-bootstrap/Navbar"
+import Nav from "react-bootstrap/Nav"
+import theme from "../styles/theme"
 
 const BrandStyle = {
     fontFamily: theme.fontFamily.cursive
