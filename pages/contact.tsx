@@ -26,6 +26,8 @@ const Contact: React.FC = () => {
             <Map center={mapCenter} zoom={14} ></Map>
             <div>
                 <h3 style={ContactInfoStyle}>Come find us! Call to order or sit in our cozy outdoor area!</h3>
+                <h4 style={ContactInfoStyle}>826 7th Avenue</h4>
+                <h4 style={ContactInfoStyle}>Two Harbors, MN 55616</h4>
             </div>
         </Container>
     )
