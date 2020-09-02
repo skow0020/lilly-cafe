@@ -9,7 +9,9 @@ const AboutStyle = {
 } as React.CSSProperties
 
 const MainImageStyle = {
-    maxWidth: "460px"
+    maxWidth: "460px",
+    width: "100%",
+    height: "auto"
 }
 
 const AboutInfoStyle = {
@@ -24,13 +26,13 @@ const About: React.FC = () => {
             <div>
                 <img
                     id="aboutImage"
-                    src="images/lillys.jpg"
+                    src="images/flower.jpg"
                     alt="About Lilly's"
                     style={MainImageStyle}
                 />
             </div>
             <div>
-                <h2 id="aboutInfo" style={AboutInfoStyle}>Delicious, Fulfilling, Healthy Asian Food</h2>
+                <h3 id="aboutInfo" style={AboutInfoStyle}>Delicious, Fulfilling, Healthy Asian Food</h3>
             </div>
         </Container>
     )

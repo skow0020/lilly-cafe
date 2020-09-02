@@ -11,20 +11,16 @@ const Home: React.FC = () => {
             <Carousel.Item>
                 <img
                     className="d-block w-100 item-1"
-                    src="images/bg_2.jpg"
-                    alt="Third slide"
+                    src="images/lillys.jpg"
+                    alt="First slide"
                     style={CarouselImageStyle}
                 />
-                <Carousel.Caption className="caption-1">
-                    <h3>Lilly&apos;s Asian Cafe</h3>
-                    <p>Two Harbors, MN</p>
-                </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img
                     className="d-block w-100 item-2"
-                    src="images/bg_1.jpg"
-                    alt="First slide"
+                    src="images/bubbletea.jpg"
+                    alt="Second slide"
                     style={CarouselImageStyle}
                 />
                 <Carousel.Caption className="caption-2">
@@ -35,7 +31,7 @@ const Home: React.FC = () => {
             <Carousel.Item>
                 <img
                     className="d-block w-100 item-3"
-                    src="images/bg_1.jpg"
+                    src="images/bg_2.jpg"
                     alt="Third slide"
                     style={CarouselImageStyle}
                 />

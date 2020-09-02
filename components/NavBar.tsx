@@ -1,10 +1,15 @@
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
+import theme from '../styles/theme'
+
+const BrandStyle = {
+    fontFamily: theme.fontFamily.cursive
+}
 
 const NavBar: React.FC = () => {
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-            <Navbar.Brand href="#home">Lilly&apos;s Asian Cafe</Navbar.Brand>
+            <Navbar.Brand href="#home" style={BrandStyle}>Lilly&apos;s Asian Cafe</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto" />
