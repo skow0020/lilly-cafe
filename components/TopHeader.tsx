@@ -1,5 +1,5 @@
-import React from 'react'
-import Row from 'react-bootstrap/Row'
+import React from "react"
+import Row from "react-bootstrap/Row"
 
 interface TopHeaderProps {
     phoneNumber: string
@@ -46,10 +46,10 @@ const hoursStyle = {
 }
 
 const formatPhoneNumber = (str) => {
-    const cleaned = ('' + str).replace(/\D/g, '');  
-    const match = cleaned.match(/^(\d{3})(\d{3})(\d{4})$/);
+    const cleaned = ("" + str).replace(/\D/g, "")
+    const match = cleaned.match(/^(\d{3})(\d{3})(\d{4})$/)
   
-    return '(' + match[1] + ') ' + match[2] + '-' + match[3]
-};
+    return "(" + match[1] + ") " + match[2] + "-" + match[3]
+}
 
 export default TopHeader

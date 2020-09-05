@@ -5,7 +5,10 @@
     "dev": "next dev",
     "build": "next build && next export",
     "start": "next dev",
-    "eslint": "eslint ."
+    "eslint": "eslint .",
+    "docker-start": "docker-compose up",
+    "docker-build": "docker-compose build",
+    "docker-stop": "docker-compose down"
   },
   "dependencies": {
     "@react-google-maps/api": "^1.9.12",

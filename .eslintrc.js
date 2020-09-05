@@ -34,7 +34,8 @@ module.exports = {
       "@typescript-eslint/ban-ts-ignore": "off",
       // needed for NextJS's jsx without react import
       "react/react-in-jsx-scope": "off",
-      "semi": ["error", "never"]
+      "semi": ["error", "never"],
+      "quotes": ["error", "double"]
     },
     globals: { React: "writable" },
   }

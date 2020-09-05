@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build"
+  command = "npm run eslint && npm run build"
   publish = "out"
 
 [[plugins]]

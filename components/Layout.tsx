@@ -1,9 +1,9 @@
-import Head from 'next/head'
-import Header from './Header'
-import Footer from './Footer'
-import Container from 'react-bootstrap/Container'
+import Head from "next/head"
+import Header from "./Header"
+import Footer from "./Footer"
+import Container from "react-bootstrap/Container"
 
-export const siteTitle = `Lilly's Asian Cafe`
+export const siteTitle = "Lilly's Asian Cafe"
 
 const LayoutStyle = {
     backgroundColor: "#272e3b",
@@ -27,7 +27,7 @@ const Layout: React.FC = ({
       <Header
         restaurantName={siteTitle}
         phoneNumber='2188344373'
-        hours='12:00PM - 3:00PM, 4:00PM - 7:30PM'
+        hours='Hours: 12:00 - 3:00, 4:00 - 7:30'
       />
         {children}
       <Footer />

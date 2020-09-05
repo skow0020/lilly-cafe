@@ -1,7 +1,7 @@
-import React from 'react'
-import PageTitle from '../components/PageTitle'
-import Container from 'react-bootstrap/Container'
-import theme from '../styles/theme'
+import React from "react"
+import PageTitle from "../components/PageTitle"
+import Container from "react-bootstrap/Container"
+import theme from "../styles/theme"
 
 const AboutStyle = {
     textAlign: "center",
