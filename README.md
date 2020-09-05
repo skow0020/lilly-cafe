@@ -16,6 +16,18 @@ While developing your website, use:
 npm start
 ```
 
+Or with docker:
+
+```
+npm run docker-build
+```
+```
+npm run docker-start
+```
+```
+npm run docker-stop
+```
+
 Then visit http://localhost:3000/ to preview your new website. The Next.js development server will automatically reload the CSS or refresh the whole page, when stylesheets or content changes.
 
 ### Static build
