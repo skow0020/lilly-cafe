@@ -40,8 +40,8 @@ const Menu: React.FC = ({ beefItems, veggieItems, appetizers }: any) => {
 }
 
 export async function getStaticProps(): Promise<any> {
-    const beefItems = getMenuItemsData("beef")
-    const veggieItems = getMenuItemsData("veggie")
+    const beefItems = getMenuItemsData("Beef")
+    const veggieItems = getMenuItemsData("Vegetable")
     const appetizers = getMenuItemsData("Appetizers")
 
     return {
