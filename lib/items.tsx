@@ -10,7 +10,7 @@ export function getMenuItemsData(mealType: string): any {
 	const menuItemsDirectory = path.join(process.cwd(), `menuItems/${mealType}`)
 	// Get file names under /menuItems
 	const fileNames = fs.readdirSync(menuItemsDirectory)
-	
+
 	const allMenuItemsData = fileNames.map(fileName => {
 		// Remove ".md" from file name to get id
 		const id = fileName.replace(/\.md$/, "")
@@ -34,7 +34,7 @@ export function getMenuItemsData(mealType: string): any {
 
 export function getAllMenuItemIds(): any {
 	const menuFolders = fs.readdirSync(menuItemsDirectory)
-	let paths =  menuFolders.map(folder => {
+	const paths = menuFolders.map(folder => {
 		const items = fs.readdirSync(path.join(menuItemsDirectory, folder))
 		return items.map(item => {
 			return {
@@ -43,11 +43,10 @@ export function getAllMenuItemIds(): any {
 					mealType: folder
 				}
 			}
-		})		
+		})
 	})
 
-	var merged = [].concat.apply([], paths);
-	return merged
+	return [].concat(...paths)
 }
 
 export async function getMenuItemData(id: string): Promise<any> {
