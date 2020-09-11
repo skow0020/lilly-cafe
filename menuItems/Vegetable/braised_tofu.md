@@ -1,6 +1,6 @@
 ---
-item: "Beef and broccoli"
-price: "$44.00"
+item: "Braised Tofu*"
+price: "$9.99"
 ---
 
 You get lots of beef and broccoli with veggies
