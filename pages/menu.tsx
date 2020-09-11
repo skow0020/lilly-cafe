@@ -38,7 +38,7 @@ export async function getStaticProps(): Promise<any> {
     const beefItems = getMenuItemsData("Beef")
     const veggieItems = getMenuItemsData("Vegetable")
     const appetizers = getMenuItemsData("Appetizers")
-    const soups = getMenuItemsData("Soup")
+    const soups = getMenuItemsData("Soups")
     const chickenItems = getMenuItemsData("Chicken")
 
     return {
