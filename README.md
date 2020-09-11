@@ -28,6 +28,14 @@ npm run docker-start
 npm run docker-stop
 ```
 
+Using the image directly:
+```
+docker pull skow0020/lillys:latest
+```
+```
+docker run -p 3000:3000 skow0020/lillys:latest
+```
+
 Then visit http://localhost:3000/ to preview your new website. The Next.js development server will automatically reload the CSS or refresh the whole page, when stylesheets or content changes.
 
 ### Static build
