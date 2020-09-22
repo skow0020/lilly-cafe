@@ -39,7 +39,7 @@ const phoneStyle = {
 }
 
 const phonehref = {
-    color: "white"
+    color: theme.colors.white
 }
 
 const hoursStyle = {
