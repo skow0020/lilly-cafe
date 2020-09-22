@@ -5,12 +5,15 @@ const theme = {
     cursive: "Snell Roundhand, cursive"
   },
   colors: {
-    textColor: "#c8a97e"
+    bronze: "#c8a97e",
+    darkBlue: "#272e3b",
+    white: "white",
+    gray: "rgba(255, 255, 255, 0.5)"
   }
 }
 
 export const textStyle = {
-  color: theme.colors.textColor,
+  color: theme.colors.bronze,
   fontFamily: theme.fontFamily.vibes
 }
 

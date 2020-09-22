@@ -15,7 +15,7 @@ const MainImageStyle = {
 }
 
 const AboutInfoStyle = {
-    color: theme.colors.textColor,
+    color: theme.colors.bronze,
     fontFamily: theme.fontFamily.vibes
 }
 

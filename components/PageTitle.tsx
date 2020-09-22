@@ -1,4 +1,5 @@
 import React from "react"
+import theme from "../styles/theme"
 
 interface PageTitleProps {
     title: string
@@ -6,8 +7,8 @@ interface PageTitleProps {
 }
 
 const PageTitleStyle = {
-    color: "#c8a97e",
-    fontFamily: "Great Vibes"
+    color: theme.colors.bronze,
+    fontFamily: theme.fontFamily.vibes
 }
 
 const PageTitle: React.FC<PageTitleProps> = (props: PageTitleProps) => {
