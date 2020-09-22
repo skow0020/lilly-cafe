@@ -5,7 +5,8 @@ const theme = {
     cursive: "Snell Roundhand, cursive"
   },
   colors: {
-    textColor: "#c8a97e"
+    textColor: "#c8a97e",
+    darkBlue: "#272e3b"
   }
 }
 

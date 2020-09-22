@@ -1,5 +1,6 @@
 import React from "react"
 import Row from "react-bootstrap/Row"
+import theme from "../styles/theme"
 
 interface TopHeaderProps {
     phoneNumber: string
@@ -26,7 +27,8 @@ const TopHeader: React.FC<TopHeaderProps> = (props: TopHeaderProps) => {
 }
 
 const TopHeaderStyle = {
-    padding: "10px"
+    padding: "10px",
+    background: theme.colors.darkBlue
 }
 
 const phoneStyle = {

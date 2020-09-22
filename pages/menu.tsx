@@ -8,7 +8,6 @@ import { textStyle } from "../styles/theme"
 
 const MenuStyle = {
     textAlign: "center",
-    paddingBottom: "100px"
 } as React.CSSProperties
 
 const RowStyle = {
