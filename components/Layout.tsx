@@ -8,7 +8,8 @@ export const siteTitle = "Lilly's Asian Cafe"
 
 const LayoutStyle = {
     backgroundColor: theme.colors.darkBlue,
-    padding: 120
+    paddingTop: 120,
+    paddingBottom: 120
 }
 
 const Layout: React.FC = ({

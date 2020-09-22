@@ -9,7 +9,7 @@ const BrandStyle = {
 const NavBar: React.FC = () => {
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-            <Navbar.Brand href="/home" style={BrandStyle}>Lilly&apos;s Asian Cafe</Navbar.Brand>
+            <Navbar.Brand href="/" style={BrandStyle}>Lilly&apos;s Asian Cafe</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto" />
