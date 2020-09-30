@@ -19,7 +19,7 @@ const MenuCard: React.FC<MenuCardProps> = (props: MenuCardProps) => {
             </div>
             <ul className="list-group list-group-flush">
                 {props.menuCardItems.map(({ id, price, item }) => (
-                    <li className="list-group-item" key={id}>
+                    <li id={id}className="list-group-item" key={id}>
                         <Link href="/menuItem/[menuType]?id=[id]" as={`/menuItem/${props.type}?id=${id}`}>
                             <a>{item}, {price}</a>
                         </Link>

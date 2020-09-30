@@ -24,7 +24,7 @@ const Post: React.FC = ({ foodData }: any) => {
         <Container style={FoodStyle}>
             {foodItem &&
                 <div>
-                    <PageTitle id={foodItem.item} title={foodItem.item} />
+                    <PageTitle id={id.toString()} title={foodItem.item} />
                     <p style={FoodItemStyle}>{foodItem && foodItem.price}</p>
                     <p style={FoodItemStyle}>{foodItem.description}</p>
                 </div>}
