@@ -7,6 +7,7 @@
     "start": "next dev",
     "eslint": "eslint .",
     "test": "jest",
+    "test:ui": "jest tests/ui/*",
     "docker-start": "docker-compose up",
     "docker-build": "docker-compose build",
     "docker-stop": "docker-compose down"
@@ -40,6 +41,7 @@
     "eslint-loader": "^4.0.2",
     "eslint-plugin-react": "^7.20.6",
     "jest": "^26.4.2",
+    "playwright": "^1.4.2",
     "typescript": "^4.0.2"
   }
 }
