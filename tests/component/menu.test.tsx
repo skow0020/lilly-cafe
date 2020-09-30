@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react"
-import Menu from "../pages/menu"
-import { testData } from "./data"
+import Menu from "../../pages/menu"
+import { testData } from "../data"
 
 describe("Menu", () => {
   it("renders without crashing", async () => {

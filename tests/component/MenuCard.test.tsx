@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react"
-import MenuCard from "../components/MenuCard"
-import { testData } from "./data"
+import MenuCard from "../../components/MenuCard"
+import { testData } from "../data"
 
 describe("MenuCard", () => {
   it("renders without crashing", async () => {
