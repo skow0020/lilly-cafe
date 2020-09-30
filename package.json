@@ -6,7 +6,7 @@
     "build": "next build && next export",
     "start": "next dev",
     "eslint": "eslint .",
-    "test": "jest",
+    "test": "jest tests/component",
     "test:ui": "jest tests/ui/*",
     "docker-start": "docker-compose up",
     "docker-build": "docker-compose build",
