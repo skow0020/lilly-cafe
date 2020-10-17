@@ -17,6 +17,7 @@ const Auth: React.FC = () => {
             setLoggedIn(!!user)
             setUser(user)
             netlifyAuth.closeModal()
+            window.location.reload()
         })
     }
 
