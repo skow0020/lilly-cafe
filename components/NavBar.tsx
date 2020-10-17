@@ -1,7 +1,9 @@
 import Navbar from "react-bootstrap/Navbar"
 import Nav from "react-bootstrap/Nav"
 import theme from "../styles/theme"
-import { FaFacebookSquare } from "react-icons/fa"   
+import { FaFacebookSquare } from "react-icons/fa"
+import Auth from "./Auth"
+
 const BrandStyle = {
     fontFamily: theme.fontFamily.cursive
 }
@@ -18,6 +20,7 @@ const NavBar: React.FC = () => {
                     <Nav.Link id="aboutLink" href="/about">About</Nav.Link>
                     <Nav.Link id="menuLink" href="/menu">Menu</Nav.Link>
                     <Nav.Link id="contactLink" href="/contact">Contact</Nav.Link>
+                    <Auth />
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
