@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import netlifyAuth from "../netlifyAuth.js"
+import Button from "react-bootstrap/Button"
 
 const Auth: React.FC = () => {
     const [loggedIn, setLoggedIn] = useState(netlifyAuth.isAuthenticated)
@@ -17,7 +18,6 @@ const Auth: React.FC = () => {
             setLoggedIn(!!user)
             setUser(user)
             netlifyAuth.closeModal()
-            window.location.reload()
         })
     }
 
@@ -32,18 +32,15 @@ const Auth: React.FC = () => {
         <div>
             {loggedIn ? (
                 <div>
-                    You are logged in!
-
-                    <br />
-                    <button onClick={logout}>
+                    <Button onClick={logout} size="sm">
                         Log out
-                    </button>
+                    </Button>
                     {user && <>Welcome {user?.user_metadata.full_name}!</>}
                 </div>
             ) : (
-                    <button onClick={login}>
+                    <Button onClick={login} size="sm">
                         Log in
-                    </button>
+                    </Button>
                 )}
         </div>
     )

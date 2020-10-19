@@ -7,7 +7,7 @@ const CarouselImageStyle = {
 
 const Home: React.FC = () => {
     return (
-        <Carousel id="carousel">
+        <Carousel id="carousel" style={{zIndex: 0}}>
             <Carousel.Item>
                 <img
                     className="d-block w-100 item-1"
