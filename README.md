@@ -54,7 +54,7 @@ You can read more about building sites and apps with Next.js in their documentat
 
 https://nextjs.org/docs
 
-## Doing dynamic things
+## Doing dynamic things hmm
 
 A few resources for doing anything you can imagine with a 100% static site/app on the JAMstack
 using Next.js. If you would like to add more resources please open a pull request!
