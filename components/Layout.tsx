@@ -1,6 +1,5 @@
 import Head from "next/head"
 import Header from "./Header"
-import Footer from "./Footer"
 import Container from "react-bootstrap/Container"
 import theme from "../styles/theme"
 
@@ -32,7 +31,6 @@ const Layout: React.FC = ({
                 hours='Hours: 12:00 - 3:00, 4:00 - 7:30'
             />
             {children}
-            <Footer />
         </Container>
     )
 }
