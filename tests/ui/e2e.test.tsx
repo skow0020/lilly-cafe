@@ -29,14 +29,6 @@ describe("Lillys e2e tests", () => {
     await page.screenshot({ path: "tests/screenshots/AboutPage.png" })
   }, 5000)
 
-  it("Back button ", async () => {
-    await page.click("text='About'")
-    await page.hover("#aboutImage")
-    await page.click(".footer a")
-    await page.hover("#carousel")
-    await page.screenshot({ path: "tests/screenshots/HomePage.png" })
-  }, 5000)
-
   afterAll(async () => {
     await browser.close()
   })
