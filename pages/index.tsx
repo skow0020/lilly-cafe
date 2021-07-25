@@ -2,7 +2,7 @@ import React from "react"
 import Carousel from "react-bootstrap/Carousel"
 
 const CarouselImageStyle = {
-    maxWidth: "900px"
+    maxWidth: "1000px"
 }
 
 const Home: React.FC = () => {
