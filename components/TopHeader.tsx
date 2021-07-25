@@ -1,6 +1,7 @@
 import React from "react"
 import Row from "react-bootstrap/Row"
 import theme from "../styles/theme"
+import { FaPhoneSquareAlt } from "react-icons/fa"
 
 interface TopHeaderProps {
     phoneNumber: string
@@ -14,11 +15,11 @@ const TopHeader: React.FC<TopHeaderProps> = (props: TopHeaderProps) => {
 
     return (
         <Row id={props.id} style={TopHeaderStyle}>
-            <div className="phoneNum" style={phoneStyle}>
+            <span className="phoneNum" style={phoneStyle}>
                 <a href={`tel:+${props.phoneNumber}`} style={phonehref}>
-                    {phoneNum}
+                    <FaPhoneSquareAlt /> {phoneNum}
                 </a>
-            </div>
+            </span>
             <div className="hours" style={hoursStyle}>
                 {props.hours}
             </div>
@@ -50,7 +51,7 @@ const hoursStyle = {
 const formatPhoneNumber = (str) => {
     const cleaned = ("" + str).replace(/\D/g, "")
     const match = cleaned.match(/^(\d{3})(\d{3})(\d{4})$/)
-  
+
     return "(" + match[1] + ") " + match[2] + "-" + match[3]
 }
 

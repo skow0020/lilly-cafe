@@ -14,7 +14,23 @@ const RowStyle = {
     display: "inline=block"
 }
 
-const Menu: React.FC = ({ beefItems, veggieItems, appetizers, soups, chickenItems }: any) => {
+interface FoodItem {
+    id: string,
+    item: string,
+    price: string,
+    description: string
+}
+
+
+interface MenuProps {
+    beefItems: Array<FoodItem>,
+    veggieItems: Array<FoodItem>,
+    appetizers: Array<FoodItem>,
+    soups: Array<FoodItem>,
+    chickenItems: Array<FoodItem>
+}
+
+const Menu: React.FC<MenuProps> = ({ beefItems, veggieItems, appetizers, soups, chickenItems }: MenuProps) => {
     return (
         <Container style={MenuStyle}>
             <PageTitle id="menuTitle" title="Menu" />
@@ -39,6 +55,7 @@ export async function getStaticProps(): Promise<any> {
     const appetizers = getMenuItemsData("Appetizers")
     const soups = getMenuItemsData("Soups")
     const chickenItems = getMenuItemsData("Chicken")
+    console.log(appetizers)
 
     return {
         props: {
