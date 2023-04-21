@@ -13,7 +13,7 @@ GOOGLE_MAPS_API_KEY=<KEY>
 While developing your website, use:
 
 ```bash
-npm start
+npm start:dev
 ```
 
 Or with docker:
